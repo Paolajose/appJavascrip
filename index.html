@@ -29,17 +29,22 @@
     <script>
        
        (function(){
-           let lista = document.getElementById("lista"),
-              
-              tareaInput= document.getElementById("tareaInput"),
+           let lista = document.getElementById("lista");
+           console.log(lista)
 
-              boton= document.getElementById("btn-agregar");
+           let tareaInput= document.getElementById("tareaInput");
+           console.log(tareaInput);
+
+           let boton= document.getElementById("btn-agregar");
 
             
               //  funciones
 
             let agregarTarea = function(){
+                  let tareaInput= document.getElementById("tareaInput");
+                    console.log(tareaInput);
                     tarea = tareaInput.value,
+                   
                     nuevaTarea = document.createElement("li"),
                     enlace = document.createElement("a"),
                     contenido = document.createTextNode(tarea);
